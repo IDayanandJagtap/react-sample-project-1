@@ -1,0 +1,72 @@
+@import url('./App.css');
+
+.contact{
+    width: 100%;
+    height: 100vh; 
+    background-color: var(--second);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact main{
+    width: 70%;
+    height: fit-content;
+    padding: 2rem;
+    background-color: var(--first);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 0 100px 0 100px;
+}
+
+.contact main h1{
+    margin: 0 0 1.5rem 0;
+    font-family: var(--text2);
+}
+
+.contactform{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.contactform div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0;
+}
+
+.contactform label{
+    font: 400 1.2rem var(--text2);
+    margin: 0 .3rem 0 0;
+}
+
+.contactform input{
+    width: 85%;
+    padding: .4rem;
+    height: 2.5rem;
+    font: 400 1rem var(--text1);
+}
+
+.contactform button{
+    width: 100px;
+    height: 40px;
+    background-color: var(--third);
+    border-radius: 6px;
+    border: none;
+    font: 400 1rem var(--text1);
+    color: var(--first);
+    cursor: pointer;
+}
+
+.contactform button:hover{
+    opacity: .9;
+}
+
+#btnContainer{
+    justify-content: flex-end;
+}

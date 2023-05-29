@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/Home.css";
 import vg from "../assets/2.webp";
 import {
   AiFillGoogleCircle,
