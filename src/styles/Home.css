@@ -110,6 +110,7 @@
     background-color: var(--second);
     display: flex;
     justify-content: flex-end;
+    margin-top: -10px;
 }
 .home4 article{
     width: 70%;
@@ -144,8 +145,8 @@
     margin: 2rem;
     border-radius: 50%;
     padding: 1rem;
-    color: var(--first);
-    background-color: black;
+    color: black;
+    background-color: var(--first);
     cursor: pointer;
     animation: imgup 0.7s linear infinite alternate;
 }
@@ -164,5 +165,125 @@
 @keyframes imgup {
     to{
         transform: translateY(10px);
+    }
+}
+
+
+/***** MEDIA QUERIES *****/
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    .home4 article { 
+        width: 80%;
+    }
+    .home4-icons-div{
+        padding: 0 4rem;
+    }
+
+    .home3 div{
+        width: 80%;
+    }
+  }
+
+@media screen and (max-width: 768px){
+    .home4 article{
+        width: 90%;
+        /* border-radius: 100px 0 0 100px; */
+    }
+    .home4 article h1{
+        font-size: 2rem;
+    }
+    .home4-icons-div{
+        padding: 0 2rem;
+    }
+    
+    .home4-icons-div div{
+        width: 80px;
+        height: fit-content;
+        margin: .8rem, .5rem;
+    }
+    .home4-icons-div div svg{
+        font-size: 2rem;
+    }
+    .home4-icons-div div p{
+        font-size: .8rem;
+    }
+
+    /* home 3 */
+    .home3 div{
+        width: 90%;
+        align-items: flex-start;
+    }
+    .home3 div h1{
+        font-size: 2rem;
+        margin-left: 1.5rem;
+    }
+    .home3 div p{
+        font-size: 1rem;
+    }
+
+    /* home 2 */
+    .home2 { 
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+    .home2 img{
+        width: 50%;
+    }
+    .home2-text{
+        width: 80%;
+    }
+    .home2-text p{
+        text-align: center;
+    }
+
+    /* home 1 */
+    .home-main::before{
+        border-radius: 0 0 100px 100px;
+    }
+    .home-main h1{
+        font-size: 5rem;
+    }
+    
+}
+
+@media screen and (max-width:480px) {
+    .home4{
+        height: 70vh;
+    }
+    .home4 article{
+        width: 100%;
+        border-radius: 0%;
+    }
+    .home4-icons-div div{
+        width: 100px;
+        height: 100px;
+    }
+
+    /* home 3  */
+    .home3 div{
+        width: 100%;
+        border-radius: 0;
+        align-items: center;
+    }
+    .home3 div h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    /* home 1 */
+    .home-main::before{
+        border-radius: 0 0 50px 50px;
+    }
+}
+
+
+@media screen and (max-width: 395px) {
+    .home4-icons-div div{
+        width: 80px;
+        height: 80px;
+        margin: .8rem, .5rem;
+    }
+
+    .home-main h1{
+        font-size: 3rem;
     }
 }

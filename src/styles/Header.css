@@ -26,3 +26,76 @@
     color: var(--third);
 }
 
+.hamMenuBtn{
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+.hamMenu{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--third);
+    position: absolute;
+    top: -110vh;
+    margin-left: -1.5rem ;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: .7s;
+
+}
+.close-ham{
+    width: 100%;
+    text-align: end;
+    font-size: 4rem;
+}
+.close-ham svg{
+    color: var(--first);
+    cursor: pointer;
+}
+.close-ham svg:hover{
+    transform: scale(1.1);
+}
+
+.ham-nav-links{
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+.ham-nav-links a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--first);
+}
+.ham-nav-links a:hover{
+    color: var(--second);
+    transform: scale(1.1);
+}
+
+
+
+
+/***** MEDIA QUERIES *****/
+
+@media screen and (min-width: 769px)  {
+    .hamMenu{
+        display: none;
+    }
+    .hamMenuBtn{
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .nav-links{
+        display: none;
+    }
+    
+}

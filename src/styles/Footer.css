@@ -31,3 +31,23 @@ footer h2{
     color: var(--dark);
     padding: .1rem;
 }
+
+
+/***** Media  queries *****/
+@media screen and (max-width: 768px) {
+    footer{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+    footer p{
+        padding-bottom:1rem ;
+        border-bottom: 1px solid var(--second);
+    }
+    footer h2{
+        text-align: start;
+    }
+    .foot-links{
+        justify-content: flex-start;
+    }
+}

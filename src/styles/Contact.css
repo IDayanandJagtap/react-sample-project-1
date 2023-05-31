@@ -37,19 +37,25 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    column-gap: 1rem;
     margin: 1rem 0;
 }
 
 .contactform label{
     font: 400 1.2rem var(--text2);
-    margin: 0 .3rem 0 0;
+    /* margin: 0 .3rem 0 0; */
 }
 
 .contactform input{
-    width: 85%;
+    width: 80%;
     padding: .4rem;
     height: 2.5rem;
     font: 400 1rem var(--text1);
+}
+.contactform input:focus{
+    outline: none;
+    border: 2px solid var(--third);
+    border-radius: 3px;
 }
 
 .contactform button{
@@ -69,4 +75,40 @@
 
 #btnContainer{
     justify-content: flex-end;
+}
+
+
+
+/***** MEDIA QUERIES *****/
+
+@media screen and (max-width: 1024px) {
+    .contact main{
+        width: 85%;
+        border-radius: 0 60px 0 60px ;
+    }
+    .contactform{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .contactform div{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: .8rem;
+    }
+    .contactform div input { 
+        width: 100%;
+    }
+    #btnContainer{
+        align-items: flex-end;
+    }
+}
+
+@media screen and (max-width: 481px) {
+    .contact main{ 
+        border-radius: 40px;
+        width: 90%;
+    }
+
 }
